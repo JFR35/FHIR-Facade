@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Fachada-FHIR
+  profiles:
+    active: dev
