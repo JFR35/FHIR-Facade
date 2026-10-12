@@ -1,6 +1,6 @@
 package com.fhirFacade.domain.model;
 
-public record Profesional(
+public record Practitioner(
     String id,
     String nombre
 ) {

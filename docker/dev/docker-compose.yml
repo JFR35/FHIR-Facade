@@ -1,0 +1,12 @@
+services:
+  hapi-fhir:
+    image: hapiproject/hapi:latest
+    container_name: hapi-fhir-poc
+    ports:
+      - "8090:8080"
+    environment:
+      # R4 es la version de FHIR mas extendida y la que usaremos para Immunization
+      hapi.fhir.fhir_version: R4
+      # Activa validacion de recursos contra perfiles/StructureDefinition al recibir
+      hapi.fhir.validation.requests_enabled: "true"
+    restart: unless-stopped

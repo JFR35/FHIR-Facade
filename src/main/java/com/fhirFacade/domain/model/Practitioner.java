@@ -1,0 +1,7 @@
+package com.fhirFacade.domain.model;
+
+public record Practitioner(
+        String id,
+        String name
+) {
+}
